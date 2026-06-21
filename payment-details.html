@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="payment-details.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Complete Your Payment</h2>
+
+        <h3>
+            Amount:
+            GH₵<span id="amount"></span>
+        </h3>
+
+        <p>
+            Your Number:
+            <span id="userNumber"></span>
+        </p>
+
+        <hr>
+
+        <h3>Send Payment To</h3>
+
+        <p>
+            Number:
+            <strong>0551234567</strong>
+        </p>
+
+        <p>
+            Name:
+            <strong>Pelle Investment</strong>
+        </p>
+
+    </div>
+
+    <button id="completeBtn" class="btn">
+    Complete Payment
+</button>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+    <div class="popup-box">
+        <h3>⏳ Pending Confirmation</h3>
+        <p>Your payment is being verified.</p>
+        <button id="closePopup">OK</button>
+    </div>
+</div>
+
+    <script src="payment-details.js"></script>
+
+</body>
+</html>

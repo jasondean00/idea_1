@@ -1,0 +1,104 @@
+{
+  "bags": [
+    {
+      "id": 1,
+      "name": "Gucci Air",
+      "price": 100,
+      "dailyIncome": 21,
+      "totalIncome":3780,
+      "cycle": 180,
+      "image": "bags/Gucci-air.jpeg"
+      
+    },
+    {
+      "id": 2,
+      "name": "Gucci Pearl",
+      "price": 200,
+      "dailyIncome": 44,
+      "totalIncome":7920,
+      "cycle": 180,
+      "image": "bags/Gucci-pearl.jpeg"
+      
+    },
+    {
+      "id": 3,
+      "name": "Louis Vuitton Raid",
+      "price": 500,
+      "dailyIncome": 114,
+      "totalIncome":20520,
+      "cycle": 180,
+      "image": "bags/LouisVuitton-Raid.jpeg"
+      
+    },
+    {
+      "id": 4,
+      "name": "Louis Vuitton Sync",
+      "price": 1000,
+      "dailyIncome": 232,
+      "totalIncome":41760,
+      "cycle": 180,
+      "image": "bags/LouisVuitton-Sync.jpeg"
+      
+    },
+    {
+      "id": 5,
+      "name": "Louis Vuitton Faith",
+      "price": 2000,
+      "dailyIncome": 476,
+      "totalIncome":85680,
+      "cycle": 180,
+      "image": "bags/LouisVuitton-Faith.jpeg"
+      
+    },
+    {
+      "id": 6,
+      "name": "Louis Vuitton Blist",
+      "price": 3000,
+      "dailyIncome": 732,
+      "totalIncome":131760,
+      "cycle": 180,
+      "image": "bags/LouisVuitton-Blist.jpeg"
+      
+    },
+    {
+      "id": 7,
+      "name": "Louis Vuitton Tier",
+      "price": 5000,
+      "dailyIncome": 1250,
+      "totalIncome":225000,
+      "cycle": 180,
+      "image": "bags/LouisVuitton-tier.jpeg"
+      
+    },
+     {
+      "id": 8,
+      "name": "Louis Vuitton Nova",
+      "price": 8000,
+      "dailyIncome": 2105,
+      "totalIncome":378900,
+      "cycle": 180,
+      "image": "bags/LouisVuitton-nova.jpeg"
+      
+    },
+     {
+        "id": 9,
+        "name": "Louis Vuitton Chrono",
+        "price": 10000,
+        "dailyIncome": 2888,
+        "totalIncome":519840,
+        "cycle": 180,
+        "image": "bags/LouisVuitton-chrono.jpeg"
+        
+    },
+     {
+        "id": 10,
+        "name": "Louis Vuitton Delair",
+        "price": 15000,
+        "dailyIncome": 5357,
+        "totalIncome":964260,
+        "cycle": 180,
+        "image": "bags/LouisVuitton-delair.jpeg"
+        
+    }
+  ]
+}

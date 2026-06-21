@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Funds</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <div class="payment-container">
+
+        <h2>Deposit Funds</h2>
+
+        <p class="minimum">
+            Minimum Deposit: GH₵100
+        </p>
+
+        <div class="quick-amounts">
+
+            <button class="amount-btn" data-amount="100">
+                GH₵100
+            </button>
+
+            <button class="amount-btn" data-amount="200">
+                GH₵200
+            </button>
+
+            <button class="amount-btn" data-amount="500">
+                GH₵500
+            </button>
+
+            <button class="amount-btn" data-amount="1000">
+                GH₵1000
+            </button>
+
+            <button class="amount-btn" data-amount="2000">
+                GH₵2000
+            </button>
+
+            <button class="amount-btn" data-amount="5000">
+                GH₵5000
+            </button>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Enter Amount</label>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Minimum GH₵100">
+
+            <small id="error-message">
+                Minimum deposit is GH₵100
+            </small>
+
+        </div>
+
+        <button id="payBtn" disabled>
+            Pay Now
+        </button>
+
+    </div>
+
+    <div id="numberModal" class="modal">
+
+    <div class="modal-content">
+
+        <h3>Enter Mobile Money Number</h3>
+
+        <input
+            type="tel"
+            id="userNumber"
+            placeholder="0241234567">
+
+        <button id="submitNumber">
+            Continue
+        </button>
+
+    </div>
+
+</div>
+
+    <script src="payment.js"></script>
+
+</body>
+</html>

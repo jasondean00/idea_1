@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pelle Investment</title>
+
     <link rel="stylesheet" href="home.css">
+
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header -->
+    
     <header>
         <div class="logo">
             👜 Pelle Investment
         </div>
     </header>
 
-    <!-- Quick Actions -->
+    
     <section class="actions">
 
         <div class="action-card">
-            <i class="fas fa-wallet"></i>
-            <span>Payment</span>
+            <a href="payment.html">
+                <i class="fas fa-wallet"></i>
+                <span id="paymentBtn">Payment</span>
+            </a>
         </div>
 
         <div class="action-card">
@@ -37,131 +41,57 @@
 
     </section>
 
-    <!-- Products -->
-    <section class="products">
+    
+    <section class="products" id="products">
 
-        <div class="product-card">
-            <img src="bags/Gucci-Air.jpeg" alt="Classic Bag">
-            <h3>Gucci Air</h3>
-            <p> <pre>
-            Daily Income : 21 GHS
-            Total Income : 3780 GHS
-            Time Duration : 180 Days</pre>
-            </p>
-            <p><b>Price:100</b></p>
-            <button>Invest</button>
-        </div>
+        
 
-        <div class="product-card">
-            <img src="bags/Gucci-Pearl.jpeg" alt="Classic Bag">
-            <h3>Gucci Pearl</h3>
-            <p> <pre>
-            Daily Income : 44 GHS
-            Total Income : 7920 GHS
-            Time Duration : 180 Days</pre>
-            </p>
-            <p><b>Price:200</b></p>
-            <button>Invest</button>
-        </div>
-
-        <div class="product-card">
-            <img src="bags/LouisVuitton-Raid.jpeg" alt="Classic Bag">
-            <h3>Louis Vuitton Raid</h3>
-            <p> <pre>
-            Daily Income : 114 GHS
-            Total Income : 20520 GHS
-            Time Duration : 365 Days</pre>
-            </p>
-            <p><b>Price:500</b></p>
-            <button>Invest</button>
-        </div>
-
-       <div class="product-card">
-            <img src="bags/LouisVuitton-Sync.jpeg" alt="Classic Bag">
-            <h3>Louis Vuitton Sync</h3>
-            <p> <pre>
-            Daily Income : 232 GHS
-            Total Income : 41760 GHS
-            Time Duration : 180 Days</pre>
-            </p>
-            <p><b>Price:1000</b></p>
-            <button>Invest</button>
-        </div>
-
-        <div class="product-card">
-            <img src="bags/LouisVuitton-Faith.jpeg" alt="Classic Bag">
-            <h3>Louis Vuitton Faith</h3>
-            <p> <pre>
-            Daily Income : 476 GHS
-            Total Income : 85680 GHS
-            Time Duration : 180 Days</pre>
-            </p>
-            <p><b>Price:2000</b></p>
-            <button>Invest</button>
-        </div>
-
-        <div class="product-card">
-            <img src="bags/LouisVuitton-Blist.jpeg" alt="Classic Bag">
-            <h3>Louis Vuitton Blist</h3>
-            <p> <pre>
-            Daily Income : 732 GHS
-            Total Income : 131760 GHS
-            Time Duration : 180 Days</pre>
-            </p>
-            <p><b>Price:3000</b></p>
-            <button>Invest</button>
-        </div>
-
-         <div class="product-card">
-            <img src="bags/LouisVuitton-tier.jpeg" alt="Classic Bag">
-            <h3>Louis Vuitton Tier</h3>
-            <p> <pre>
-            Daily Income : 1250 GHS
-            Total Income : 225000 GHS
-            Time Duration : 180 Days</pre>
-            </p>
-            <p><b>Price:5000</b></p>
-            <button>Invest</button>
-        </div>
-
-         <div class="product-card">
-            <img src="bags/LouisVuitton-nova.jpeg" alt="Classic Bag">
-            <h3>Louis Vuitton Nova</h3>
-            <p> <pre>
-            Daily Income : 2105 GHS
-            Total Income : 378900 GHS
-            Time Duration : 180 Days</pre>
-            </p>
-            <p><b>Price:8000</b></p>
-            <button>Invest</button>
-        </div>
-
-         <div class="product-card">
-            <img src="bags/LouisVuitton-chrono.jpeg" alt="Classic Bag">
-            <h3>Louis Vuitton Chrono</h3>
-            <p> <pre>
-            Daily Income : 2888 GHS
-            Total Income : 520000 GHS
-            Time Duration : 180 Days</pre>
-            </p>
-            <p><b>Price:10000</b></p>
-            <button>Invest</button>
-        </div>
-
-         <div class="product-card">
-            <img src="bags/LouisVuitton-delair.jpeg" alt="Classic Bag">
-            <h3>Louis Vuitton Delair</h3>
-            <p> <pre>
-            Daily Income :  5357 GHS
-            Total Income : 131760 GHS
-            Time Duration : 180 Days</pre>
-            </p>
-            <p><b>Price:15000</b></p>
-            <button>Invest</button>
-        </div>
     </section>
 
-    <!-- Bottom Navigation -->
+    
+    <div id="investModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-btn">&times;</span>
+
+            <img id="bagImage" src="" alt="Bag Image">
+
+            <h2 id="bagName"></h2>
+
+            <div class="bag-info">
+
+                <p>
+                    <strong>Price:</strong>
+                    <span id="bagPrice"></span> GHS
+                </p>
+
+                <p>
+                    <strong>Daily Income:</strong>
+                    <span id="bagDaily"></span> GHS
+                </p>
+
+                <p>
+                    <strong>Total Income:</strong>
+                    <span id="bagTotal"></span> GHS
+                </p>
+
+                <p>
+                    <strong>Duration:</strong>
+                    <span id="bagCycle"></span> Days
+                </p>
+
+            </div>
+
+            <button id="confirmInvest">
+                Confirm Investment
+            </button>
+
+        </div>
+
+    </div>
+
+    
     <nav class="bottom-nav">
 
         <a href="#">
@@ -185,6 +115,12 @@
         </a>
 
     </nav>
+    <script>
+        document.getElementById("paymentBtn").addEventListener("click", () => {
+        window.location.href = "payment.html";});
+    </script>
+
+    <script src="home.js"></script>
 
 </body>
 </html>
