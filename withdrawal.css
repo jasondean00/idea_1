@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+    background-image: url("images/pelle.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.withdraw-card{
+    width:100%;
+    max-width:450px;
+    padding:30px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 8px 32px rgba(0,0,0,0.15);
+    animation:fadeIn 0.6s ease;
+}
+
+.withdraw-card h2{
+    text-align:center;
+    color:white;
+    margin-bottom:25px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    color:white;
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+.input-group input,
+.input-group select{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:rgba(255,255,255,0.25);
+    color:#fff;
+    font-size:15px;
+}
+
+.input-group input::placeholder{
+    color:rgba(255,255,255,0.8);
+}
+
+select option{
+    color:#000;
+}
+
+.confirm-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:rgb(74, 61, 61);
+    color:#bdc1c4;
+    font-weight:bold;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.confirm-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 20px rgba(255,255,255,0.4);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

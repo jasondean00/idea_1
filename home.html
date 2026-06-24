@@ -30,8 +30,10 @@
         </div>
 
         <div class="action-card">
-            <i class="fas fa-money-bill-wave"></i>
-            <span>Withdrawal</span>
+           <a href="withdrawal.html">  
+             <i class="fas fa-money-bill-wave"></i>
+            <span id="withdrawBtn">Withdrawal</span>
+           </a> 
         </div>
 
         <div class="action-card">
@@ -118,6 +120,9 @@
     <script>
         document.getElementById("paymentBtn").addEventListener("click", () => {
         window.location.href = "payment.html";});
+
+        document.getElementById("withdrawBtn").addEventListener("click", () => {
+        window.location.href = "withdrawal.html";});
     </script>
 
     <script src="home.js"></script>
