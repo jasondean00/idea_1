@@ -33,7 +33,7 @@ body{
 
 .withdraw-card h2{
     text-align:center;
-    color:white;
+    color:rgb(0, 0, 0);
     margin-bottom:25px;
 }
 
@@ -43,7 +43,7 @@ body{
 
 .input-group label{
     display:block;
-    color:white;
+    color:rgb(11, 11, 11);
     margin-bottom:8px;
     font-size:14px;
 }
@@ -56,12 +56,12 @@ body{
     outline:none;
     border-radius:12px;
     background:rgba(255,255,255,0.25);
-    color:#fff;
+    color:#030303;
     font-size:15px;
 }
 
 .input-group input::placeholder{
-    color:rgba(255,255,255,0.8);
+    color:rgba(5, 5, 5, 0.8);
 }
 
 select option{
